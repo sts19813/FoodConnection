@@ -18,14 +18,14 @@ array(
 
 echo add_assets('footer',
 array(
-	
+	'<script type="text/javascript" src="' . base_url('/assets/Loginxdd/js/jquery.min.js') . '"></script>',
+	'<script type="text/javascript" src="' . base_url('/assets/Loginxdd/js/bootstrap.min.js') . '"></script>',
+	'<script type="text/javascript" src="' . base_url('/assets/Loginxdd/js/my-login.js') . '"></script>',
 	'<script type="text/javascript" src="' . base_url('/assets/js/jquery-1.10.2.min.js') . '"></script>',
 	'<script type="text/javascript" src="' . base_url('/assets/js/bootstrap.minn.js') . '"></script>',
 	'<script type="text/javascript" src="' . base_url('/assets/js/jquery-1.10.2.js') . '"></script>',
 	'<script type="text/javascript" src="' . base_url('/assets/js/jquery.mixitup.min.js') . '"></script>',
 	'<script type="text/javascript" src="' . base_url('/assets/js/main.js') . '"></script>'
-
-
 
 
 

@@ -40,6 +40,14 @@ class Ctrlogin extends CI_Controller {
 
 	}
 
+
+
+	public function registro()
+	{
+		$this->load->view('welcome_message');
+			$this->load->view('Viewregistro');
+	}
+
 	public function verifica()
 	{
 		$email = $this->input->post('email');
@@ -57,6 +65,38 @@ class Ctrlogin extends CI_Controller {
 			default:
 				break;
 
+		}
+
+	}
+
+
+	public function guardarUsuario()
+	{
+
+		if ($this->input->post()) {
+
+			$nom = $this->input->post('nom');
+			$corr = $this->input->post('corr');
+			$contra = $this->input->post('contra');
+
+			$hash = password_hash($contra, PASSWORD_DEFAULT);
+
+				//$nom=$this->db->escape($_POST["nom"]);
+               //$corr=$this->db->escape($_POST["corr"]);
+                //$contra=$this->db->escape($_POST["contra"]);
+
+
+		
+
+
+			if ($this->LoginModel->guardar($nom, $corr, $hash))
+			{
+
+
+
+			}
+			$this->load->view('welcome_message');
+			$this->load->view('principal');
 		}
 
 	}

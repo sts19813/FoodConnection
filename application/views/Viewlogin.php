@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
 <head>
 
 
@@ -55,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</button>
 								</div>
 								<div class="mt-4 text-center">
-									¿No tienes una cuenta? <a href="register.html">Crear una</a>
+									¿No tienes una cuenta? <a href="<?php echo base_url().'index.php/Ctrlogin/registro' ?>">Crear una</a>
 								</div>
 							</form>
 						</div>
